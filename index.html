@@ -1,1 +1,50 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <svg class="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>library</title><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
+            <h1>THE STANDARD LIBRARY</h1>
+        </div>
+        <div class="btn">
+            <button class="add">Add book</button>
+            <dialog class="add-book-dialog">Hey there, sweetie!</dialog>
+        </div>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th># Pages</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>Titan</td>
+                    <td>Ron Chernov</td>
+                    <td>682</td>
+                    <td><button class="table-btn" id="read">Read</button></td>
+                    <td><button class="table-btn" id="remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Rework</td>
+                    <td>DHH & Jason Fried</td>
+                    <td>356</td>
+                    <td><button class="table-btn" id="read">Read</button></td>
+                    <td><button class="table-btn" id="remove">Remove</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
