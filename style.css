@@ -152,3 +152,60 @@ table th{
 tr:first-child{
     font-weight: 700;
 }
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+input{
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
+dialog{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+dialog h3{
+    text-align: center;
+}
+
+label{
+    min-width: 75px;
+    padding-left: 5px;
+}
+
+.radio-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-btn button{
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-weight: 800;
+}

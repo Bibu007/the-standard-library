@@ -18,7 +18,35 @@
         </div>
         <div class="btn">
             <button class="add">Add book</button>
-            <dialog class="add-book-dialog">Hey there, sweetie!</dialog>
+            <dialog class="add-book-dialog">
+                <h3>Enter details</h3>
+                <form id="add-new" action="">
+                    <p class="form-item">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" required>
+                    </p>
+                    <p class="form-item">
+                        <label for="author">Author</label>
+                        <input type="text" name="author" required>
+                    </p>
+                    <p class="form-item">
+                        <label for="pages"># pages</label>
+                        <input type="text" name="pages" required>
+                    </p>
+                    <p class="form-item">
+                        <div class="radio-grp">
+                            <input type="radio" id="read" name="read" value="read" checked>
+                            <label for="html">Read</label><br>
+                            <input type="radio" id="read" name="read" value="unread" checked>
+                            <label for="html">Unread</label><br>
+                        </div>
+                    </p>
+                </form>
+                <div class="form-btn">
+                        <button type="submit" form="add-new">Submit</button>
+                        <button>Close</button>
+                    </div>
+            </dialog>
         </div>
         <div class="table-container">
             <table>
