@@ -35,7 +35,7 @@ function Book(title, author, pages){
     this.title = title;
     this.author = author;
     this.pages = pages;
-    this.read = "unread";
+    this.read = "Unread";
 }
 
 const b1 = new Book("Titan", "Ron Chernov", "723");
@@ -75,7 +75,7 @@ function displayBooks(){
                         <td>${books[i].title}</td>
                         <td>${books[i].author}</td>
                         <td>${books[i].pages}</td>
-                        <td><button class="table-btn" id="read">${books[i].read}</button></td>
+                        <td><button class="table-btn read-btn" id="read">${books[i].read}</button></td>
                         <td><button class="table-btn remove-btn" id="remove" data-id="${books[i].id}">Remove</button></td>
                         </tr>`;
 
@@ -96,11 +96,29 @@ function removeBook(event){
     displayBooks();
 }
 
+function readBook(event){
+    if(event.target.textContent == "Read"){
+        event.target.textContent ="Unread";
+    }
+    else if(event.target.textContent == "Unread"){
+        event.target.textContent = "Read";
+    }
+}
+
 //removeBtn.addEventListener('click', (event) => removeBook(event));
 
 tableBody.addEventListener('click', (event) => {
   // Check if the clicked element is actually the remove button
   if (event.target.classList.contains('remove-btn')) {
     removeBook(event);
+  }
+
+});
+
+
+tableBody.addEventListener('click', (event) => {
+  // Check if the clicked element is actually the remove button
+  if (event.target.classList.contains('read-btn')) {
+    readBook(event);
   }
 });
