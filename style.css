@@ -115,10 +115,13 @@ table{
     border-collapse: collapse;
     width: 95%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 tr{
     padding: 5px;
+    border-bottom: 5px solid #D4D9E0;
+    border-radius: 5px;
 }
 
 td{
@@ -149,9 +152,7 @@ table th{
     background-color:beige;
 }
 
-tr:first-child{
-    font-weight: 700;
-}
+
 
 form{
     display: flex;

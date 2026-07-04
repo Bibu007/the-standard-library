@@ -44,33 +44,23 @@
                 </form>
                 <div class="form-btn">
                         <button type="submit" form="add-new">Submit</button>
-                        <button>Close</button>
+                        <button id="close">Close</button>
                     </div>
             </dialog>
         </div>
         <div class="table-container">
-            <table>
-                <tr>
+            <table class="table">
+                <thead><tr>
                     <th>Title</th>
                     <th>Author</th>
                     <th># Pages</th>
                     <th>Status</th>
                     <th>Remove</th>
                 </tr>
-                <tr>
-                    <td>Titan</td>
-                    <td>Ron Chernov</td>
-                    <td>682</td>
-                    <td><button class="table-btn" id="read">Read</button></td>
-                    <td><button class="table-btn" id="remove">Remove</button></td>
-                </tr>
-                <tr>
-                    <td>Rework</td>
-                    <td>DHH & Jason Fried</td>
-                    <td>356</td>
-                    <td><button class="table-btn" id="read">Read</button></td>
-                    <td><button class="table-btn" id="remove">Remove</button></td>
-                </tr>
+            </thead>
+            <tbody class="books-table">
+
+            </tbody>
             </table>
         </div>
     </div>
